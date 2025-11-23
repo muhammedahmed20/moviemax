@@ -1,0 +1,2347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MOVIEMAX</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="col-12 py-4">
+      <div
+        class="container col-12 d-flex justify-content-between align-items-center"
+      >
+        <div class="col-3">
+          <h1 class="text-white fs-2 mb-0">
+            MOVIE<span class="text-danger">MAX</span>
+          </h1>
+        </div>
+        <nav class="d-none d-lg-flex gap-lg-4 col-lg-6 justify-content-lg-start">
+          <a href="/" class="text-decoration-none text-white  active">Home</a>
+          <a href="#" class="text-decoration-none text-white">Movis</a>
+          <a href="#" class="text-decoration-none text-white">Tv Show</a>
+          <a href="#" class="text-decoration-none text-white">pricing</a>
+          <a href="#" class="text-decoration-none text-white">Contact</a>
+        </nav>
+        <div
+          class="col-3 d-none d-lg-flex justify-content-lg-end align-items-lg-center"
+        >
+          <div
+            class="col-4 d-flex justify-content-end align-items-lg-end border-end pe-4"
+          >
+            <p class="mb-0 text-white me-1" style="font-size: 14px">Eng</p>
+            <i
+              class="bi bi-chevron-down text-white"
+              style="font-size: 11px"
+            ></i>
+          </div>
+          <div
+            class="d-none col-5 d-lg-flex justify-content-lg-end align-items-lg-center"
+          >
+            <i class="bi bi-search text-white" style="font-size: 20px"></i>
+            <i class="bi bi-bell mx-4 text-white" style="font-size: 20px"></i>
+            <i
+              class="bi bi-person-circle text-white"
+              style="font-size: 20px"
+            ></i>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-danger d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i
+            class="bi bi-list text-white d-flex d-lg-none"
+            style="font-size: 30px"
+          ></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column">
+            <div class="col-12 mb-5">
+              <h1 class="text-white fs-2 mb-0 text-center">
+                MOVIE<span class="text-danger">MAX</span>
+              </h1>
+            </div>
+            <nav class="col-12 d-flex flex-column align-items-center mb-5">
+              <a href="#" class="text-decoration-none text-white mb-4 active">Home</a>
+              <a href="#" class="text-decoration-none text-white mb-4">Movis</a>
+              <a href="#" class="text-decoration-none text-white mb-4"
+                >Tv Show</a
+              >
+              <a href="#" class="text-decoration-none text-white mb-4"
+                >pricing</a
+              >
+              <a href="#" class="text-decoration-none text-white mb-5"
+                >Contact</a
+              >
+            </nav>
+            <div class="col-12 d-flex flex-column align-items-center">
+              <div
+                class="col-12 d-flex align-items-center justify-content-center mb-4"
+              >
+                <p class="mb-0 text-white me-1" style="font-size: 14px">Eng</p>
+                <i
+                  class="bi bi-chevron-down text-white"
+                  style="font-size: 11px"
+                ></i>
+              </div>
+              <div
+                class="col-8 d-flex justify-content-between align-items-center"
+              >
+                <i class="bi bi-search text-white" style="font-size: 20px"></i>
+                <i class="bi bi-bell text-white" style="font-size: 20px"></i>
+                <i
+                  class="bi bi-person-circle text-white"
+                  style="font-size: 20px"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero col-12">
+      <div
+        class="container col-12 d-flex flex-column align-items-center justify-content-end h-100"
+      >
+        <div
+          class="top col-12 d-flex flex-column align-items-center justify-content-center mb-5"
+        >
+          <h1 class="text-white text-center col-12 col-lg-6 fs-1">
+            Experience Cinema Like Never Before
+          </h1>
+          <p
+            class="text-secondary text-center col-10 col-lg-5"
+            style="font-size: 18px"
+          >
+            Watch online and offline most talked about movies and TV series on
+            <span class="fw-bold text-white">Movie</span
+            ><span class="text-danger">Max</span>
+          </p>
+          <div class="group d-flex gap-3 mt-3">
+            <a href="#" class="btn btn-danger px-3 py-2" style="font-size: 12px"
+              >Stream Now</a
+            >
+            <a
+              href="#"
+              class="soso btn text-white border px-3 py-2"
+              style="font-size: 12px"
+              >Stream Now</a
+            >
+          </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="cards col-12 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="card bg-transparent col-3"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/ePpEZavm379yDhx92ekbDnpGa9a-300x450.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="card bg-transparent col-3 mx-4"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/MV5BYmU5OGFiN2QtZDBiZC00MjdiLTg5ZmMtNWI2Yjg2NGU0MzhjXkEyXkFqcGc@-1.jpg_V1_SX700-1-350x438.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="card bg-transparent col-3"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/MV5BM2E1MjBmM2UtZDJmNi00MzViLWE3MDAtODQ5OTg0ZmU2ODcwXkEyXkFqcGc@.jpg_V1_SX700-275x450.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="cards col-12 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="card bg-transparent col-3"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/ePpEZavm379yDhx92ekbDnpGa9a-300x450.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="card bg-transparent col-3 mx-4"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/MV5BYmU5OGFiN2QtZDBiZC00MjdiLTg5ZmMtNWI2Yjg2NGU0MzhjXkEyXkFqcGc@-1.jpg_V1_SX700-1-350x438.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="card bg-transparent col-3"
+                  style="position: relative"
+                >
+                  <img
+                    src="./assets/MV5BM2E1MjBmM2UtZDJmNi00MzViLWE3MDAtODQ5OTg0ZmU2ODcwXkEyXkFqcGc@.jpg_V1_SX700-275x450.webp"
+                    alt=""
+                    class="col-12 rounded-2"
+                  />
+                  <div
+                    class="overlay col-12 h-100"
+                    style="
+                      background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.411) 0%,
+                        rgba(0, 0, 0, 0.452) 100%
+                      );
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    "
+                  ></div>
+                  <div
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="
+                      font-size: 40px;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      width: 55px;
+                      height: 55px;
+                      background-color: rgba(58, 58, 58, 0.726);
+                    "
+                  >
+                    <i class="bi bi-play-circle text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about col-12 px-lg-0 px-2">
+      <div
+        class="container col-12 d-flex flex-column-reverse flex-lg-row justify-content-around align-items-center"
+      >
+        <div class="right col-lg-5 col-12 rounded-3">
+          <div class="overlay col-12 h-100 d-flex align-items-end p-3">
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <i class="bi bi-play-fill text-white" style="font-size: 18px"></i>
+              <div class="col-8 bg-white rounded-pill" style="height: 5px">
+                <div class="col-8 bg-danger h-100 rounded-pill"></div>
+              </div>
+              <p class="col-3 text-white mb-0 text-end">01:22:00/02:28:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="left col-lg-5 col-12 text-center">
+          <h1 class="text-white fw-semibold mb-4">
+            About Movie<span class="text-danger fw-medium">Max</span>
+          </h1>
+          <p class="text-secondary col-lg-11 col-12 m-lg-0 mb-4">
+            Welcome to MovieMax, the ultimate destination for movie enthusiasts.
+            Get ready to embark on an extraordinary cinematic journey, Where you
+            can immerse yourself in the captivatingworldof films.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value section -->
+    <section class="value col-12">
+      <div class="container col-12">
+        <h1 class="text-white fw-semibold mb-4 col-12 text-center mb-5">
+          Exploring of <span class="text-danger fw-medium">the Values</span>
+        </h1>
+
+        <div
+          class="cards d-flex flex-lg-row flex-column gap-lg-0 gap-4 justify-content-around align-items-center"
+        >
+          <div
+            class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-center align-items-center p-4"
+            style="height: 240px"
+          >
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center mb-3"
+              style="background-color: #263344; width: 60px; height: 60px"
+            >
+              <i
+                class="fa-solid fa-award text-danger"
+                style="font-size: 30px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold mb-3">Quality</h6>
+            <p class="text-secondary text-center m-0" style="font-size: 10px">
+              We are committed to delivering high-quality content to captivates
+              and entertains our audiance
+            </p>
+          </div>
+          <div
+            class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-center align-items-center p-4"
+            style="height: 240px"
+          >
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center mb-3"
+              style="background-color: #263344; width: 60px; height: 60px"
+            >
+              <i
+                class="fa-solid fa-compact-disc text-danger"
+                style="font-size: 30px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold mb-3">Variety</h6>
+            <p class="text-secondary text-center m-0" style="font-size: 10px">
+              We offer a diverse range of movies and TV shows, catering to
+              different tastes and preferences
+            </p>
+          </div>
+          <div
+            class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-center align-items-center p-4"
+            style="height: 240px"
+          >
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center mb-3"
+              style="background-color: #263344; width: 60px; height: 60px"
+            >
+              <i
+                class="fa-solid fa-computer text-danger"
+                style="font-size: 30px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold mb-3">Accessibility</h6>
+            <p class="text-secondary text-center m-0" style="font-size: 10px">
+              We strive to make our platform accessible across multiple devices,
+              so you can enjoy movies anytime, anywhere.
+            </p>
+          </div>
+          <div
+            class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-center align-items-center p-4"
+            style="height: 240px"
+          >
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center mb-3"
+              style="background-color: #263344; width: 60px; height: 60px"
+            >
+              <i
+                class="fa-solid fa-lightbulb text-danger"
+                style="font-size: 30px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold mb-3">Innovation</h6>
+            <p class="text-secondary text-center m-0" style="font-size: 10px">
+              We continuously seek innovation ways to enhance your
+              movie-watching experience and provide new feature.
+            </p>
+          </div>
+          <div
+            class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-center align-items-center p-4"
+            style="height: 240px"
+          >
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center mb-3"
+              style="background-color: #263344; width: 60px; height: 60px"
+            >
+              <i
+                class="fa-solid fa-users-line text-danger"
+                style="font-size: 30px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold mb-3">Community</h6>
+            <p class="text-secondary text-center m-0" style="font-size: 10px">
+              We value the movie-loving community and aim to foster and sense of
+              belonfing and engagement among our users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- offer section -->
+    <section class="offer col-12">
+      <div class="container col-12">
+        <div class="top col-12 rounded-3" style="margin-bottom: 60px">
+          <div
+            class="overlay col-12 h-100 rounded-3 d-flex flex-column justify-content-center align-items-lg-start align-items-center"
+          >
+            <h5 class="text-white mb-3">BINGE WATCH PARTY STREAM</h5>
+            <h1
+              class="text-danger col-lg-6 col-12 fw-semibold text-lg-start text-center"
+            >
+              Get 40% off <br />
+              Monthly Subscription
+            </h1>
+            <p class="text-white mb-4" style="font-size: 12px">
+              DECEMBER - JANUARY
+            </p>
+            <a href="#" class="btn btn-danger">Subscribe Now</a>
+          </div>
+        </div>
+        <div
+          class="bottom col-12 d-flex flex-lg-row flex-wrap justify-content-center align-items-center"
+        >
+          <div
+            class="feat feat2 col-lg-3 col-6 border-start border-end border-danger d-flex flex-column justify-content-center align-items-center py-3"
+          >
+            <h1 class="text-danger" style="font-size: 50px">10,000+</h1>
+            <p class="text-white">Movies and TV Shows</p>
+          </div>
+          <div
+            class="feat col-lg-3 col-6 border-end border-danger d-flex flex-column justify-content-center align-items-center py-3"
+          >
+            <h1 class="text-danger" style="font-size: 50px">2,5M</h1>
+            <p class="text-white">Satsified Movie lovers</p>
+          </div>
+          <div
+            class="feat feat2 col-lg-3 col-6 d-flex flex-column justify-content-center align-items-center py-3"
+          >
+            <h1 class="text-danger" style="font-size: 50px">60+</h1>
+            <p class="text-white">Available in Countries</p>
+          </div>
+          <div
+            class="feat col-lg-3 col-6 border-start border-end border-danger d-flex flex-column justify-content-center align-items-center py-3"
+          >
+            <h1 class="text-danger" style="font-size: 50px">24/7</h1>
+            <p class="text-white">Customer Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- movis section -->
+    <section class="movies col-12">
+      <div class="container col-12">
+        <div class="heading d-flex align-items-center mb-5">
+          <h3 class="text-danger mb-0 me-2">
+            Movies <span class="text-white">Collections</span>
+          </h3>
+          <i
+            class="fa-solid fa-angle-right text-white"
+            style="font-size: 20px"
+          ></i>
+        </div>
+        <div
+          class="cards col-12 d-flex align-items-center flex-lg-wrap flex-md-row flex-md-wrap flex-column flex-lg-row"
+          style="gap: 15px"
+        >
+          <a href="./pages/spider-man-page.html" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/images-300x450.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                The Amazing Spider-Man
+                ( 2012 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Sci-Fi</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">The Amazing Spider-Man (2012)</h5>
+              <p style="font-size: 12px" class="text-secondary">Sci-Fi</p>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/family.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                The Family Plan 2 <br />
+                ( 2025 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Action</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">The Family Plan 2 (2025)</h5>
+              <p style="font-size: 12px" class="text-secondary">Action</p>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/fast.webp"
+              alt=""
+              class="mb-3 rounded-3 col-12"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Fast X <br />
+                ( 2023 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Action</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Fast X (2023)</h5>
+              <p style="font-size: 12px" class="text-secondary">Action</p>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/punsh.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Punch <br />
+                ( 2022 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Drama</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Punch  (2022)</h5>
+              <p style="font-size: 12px" class="text-secondary">Drama</p>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/lord.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                The Lord of the Rings: The Return of the King ( 2003 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Sci-Fi</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">FThe Lord of the Rings: The Return of the King ( 2003 )</h5>
+              <p style="font-size: 12px" class="text-secondary">Sci-Fi</p>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/inter.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Interstellar  <br />
+                ( 2014 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Sci-Fi</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Interstellar  (2014)</h5>
+              <p style="font-size: 12px" class="text-secondary">Sci-Fi</p>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/bXLVZGgLgd7OwbfP6fC5GCfrxuD-scaled-300x450.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Books of Blood <br />
+                ( 2020 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Sci-Fi</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Books of Blood (2020)</h5>
+              <p style="font-size: 12px" class="text-secondary">Sci-Fi</p>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/02-1446-350x398.webp"
+              alt=""
+              class="mb-3 rounded-3 col-12"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                The Cell <br />
+                ( 2020 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Horror</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">The Cell (2020)</h5>
+              <p style="font-size: 12px" class="text-secondary">Horror</p>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/MV5BYmRhN2MzNDEtYWMwYy00ZjlhLThiNjItODY3MmE4MThmMTc3XkEyXkFqcGdeQXVyNDg4ODI4MQ@@._V1_-scaled-300x450.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Archons<br />
+                ( 2020 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Adventure</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Archons (2020)</h5>
+              <p style="font-size: 12px" class="text-secondary">Adventure</p>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/MV5BNzE4MTc2YmYtYmNiMi00ZjA2LWE0YTgtYmM2ZTU5N2M4ZjE1XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_-scaled-304x450.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Force of Nature <br />
+                ( 2020 )
+              </h5>
+              <p class="text-secondary" style="font-size: 12px">Action</p>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Force of Nature (2020)</h5>
+              <p style="font-size: 12px" class="text-secondary">Action</p>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TV Shows section -->
+    <section class="movies col-12">
+      <div class="container col-12">
+        <div class="heading d-flex align-items-center mb-5">
+          <h3 class="text-danger mb-0 me-2">
+            TV Shows <span class="text-white">Collections</span>
+          </h3>
+          <i
+            class="fa-solid fa-angle-right text-white"
+            style="font-size: 20px"
+          ></i>
+        </div>
+        <div
+          class="cards col-12 d-flex align-items-center flex-lg-wrap flex-md-row flex-md-wrap flex-column flex-lg-row"
+          style="gap: 15px"
+        >
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/yy.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Fire Country
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Fire Country</h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/lNenic4X3hzz7R0XFUcGKfsemKC.jpg"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Boston Blue
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Boston Blue</h5>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/squad.webp"
+              alt=""
+              class="mb-3 rounded-3 col-12"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Squid Game
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Squid Game </h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/girl.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Supergirl 
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Supergirl </h5>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/hood.jpg"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Robin Hood
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Robin Hood</h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/lacasa.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                La casa de papel
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">La casa de papel</h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/game.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Game of Thrones
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Game of Thrones</h5>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/black.webp"
+              alt=""
+              class="mb-3 rounded-3 col-12"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Black Knight
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Black Knight</h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/no.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Nobody Wants This
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Nobody Wants This</h5>
+              <i
+                class="bi bi-heart-fill text-danger fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card col-lg-2 col-12 border-0 bg-transparent">
+            <img
+              src="./assets/vikings.webp"
+              alt=""
+              class="mb-3 rounded-3"
+            />
+            <div class="info">
+              <h5 class="text-white m0 fs-6">
+                Vikings
+              </h5>
+            </div>
+            <div class="overlay">
+              <h5 class="m0 text-white fs-6">Vikings</h5>
+              <i
+                class="bi bi-heart text-white fs-4"
+                style="position: absolute; top: 15px; right: 15px"
+              ></i>
+
+              <div class="icons d-flex align-items-center gap-1">
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i class="fa-solid fa-expand" style="font-size: 12px"></i>
+                </div>
+                <div
+                  class="icon rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(105, 105, 105, 0.589);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-volume-xmark"
+                    style="font-size: 12px"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- devices section -->
+    <section class="value col-12">
+      <div class="container col-12">
+        <h1 class="text-white fw-semibold mb-4 col-12 text-center mb-5">
+          Compatible <span class="text-danger fw-medium">Devices</span>
+        </h1>
+
+        <div
+          class="cards d-flex flex-lg-row flex-column gap-lg-0 gap-4 justify-content-around align-items-center"
+        >
+          <div
+            class="card col-lg-3 col-8 d-flex flex-column justify-content-start align-items-center"
+            style="
+              background-color: #121e2e;
+              position: relative;
+              width: 300px;
+              height: 280px;
+            "
+          >
+            <div>
+              <i class="bi bi-tv text-danger m-0" style="font-size: 150px"></i>
+            </div>
+            <h6 class="text-white fw-bold" style="margin-top: -45px">
+              Smart TV
+            </h6>
+          </div>
+          <div
+            class="card col-lg-3 col-8 d-flex flex-column justify-content-start align-items-center"
+            style="
+              background-color: #121e2e;
+              position: relative;
+              width: 300px;
+              height: 280px;
+            "
+          >
+            <div>
+              <i
+                class="bi bi-laptop text-danger m-0"
+                style="font-size: 150px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold" style="margin-top: -45px">Laptop</h6>
+            <h6 class="text-white fw-bold" style="margin-top: 3px">
+              Desktop Copmuter
+            </h6>
+          </div>
+          <div
+            class="card col-lg-3 col-8 d-flex flex-column justify-content-start align-items-center"
+            style="
+              background-color: #121e2e;
+              position: relative;
+              width: 300px;
+              height: 280px;
+            "
+          >
+            <div>
+              <i
+                class="bi bi-phone text-danger m-0"
+                style="font-size: 150px"
+              ></i>
+            </div>
+            <h6 class="text-white fw-bold" style="margin-top: -35px">
+              Smart TV
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work section -->
+    <section class="work col-12">
+      <div class="container col-12">
+        <h1 class="text-white fw-semibold mb-4 col-12 text-center mb-5">
+          How it <span class="text-danger fw-medium">Works</span>
+        </h1>
+
+        <div>
+          <div
+            class="cards d-flex flex-lg-row flex-column gap-lg-0 justify-content-center align-items-center"
+          >
+            <div
+              class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-start align-items-center py-4 px-3"
+              style="position: relative"
+            >
+              <div
+                class="box bg-danger text-white d-flex justify-content-center align-items-center fw-light"
+                style="
+                  border-radius: 3px;
+                  position: absolute;
+                  width: 32px;
+                  height: 34px;
+                  top: -25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                01
+              </div>
+              <i
+                class="fa-solid fa-users-gear text-white m-0 py-4"
+                style="font-size: 50px"
+              ></i>
+              <h6
+                class="text-white fw-light text-center"
+                style="font-size: 12px"
+              >
+                Sign up an account on MovieMax
+              </h6>
+            </div>
+            <p class="spase d-none d-lg-flex text-white mx-5">--------></p>
+            <div
+              class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-start align-items-center py-4 px-3"
+              style="position: relative"
+            >
+              <div
+                class="box bg-danger text-white d-flex justify-content-center align-items-center fw-light"
+                style="
+                  border-radius: 3px;
+                  position: absolute;
+                  width: 32px;
+                  height: 34px;
+                  top: -25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                02
+              </div>
+              <i
+                class="fa-solid fa-hand-holding-dollar text-white m-0 py-4"
+                style="font-size: 50px"
+              ></i>
+              <h6
+                class="text-white fw-light text-center"
+                style="font-size: 12px"
+              >
+                Choose a subscription plan that suits your needs
+              </h6>
+            </div>
+            <p class="spase d-none d-lg-flex text-white mx-5">--------></p>
+            <div
+              class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-start align-items-center py-4 px-3"
+              style="position: relative"
+            >
+              <div
+                class="box bg-danger text-white d-flex justify-content-center align-items-center fw-light"
+                style="
+                  border-radius: 3px;
+                  position: absolute;
+                  width: 32px;
+                  height: 34px;
+                  top: -25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                03
+              </div>
+              <i
+                class="fa-solid fa-folder-open text-white m-0 py-4"
+                style="font-size: 50px"
+              ></i>
+              <h6
+                class="text-white fw-light text-center"
+                style="font-size: 12px"
+              >
+                Browse through our vast collection of movies and TV shows
+              </h6>
+            </div>
+          </div>
+          <div
+            class="cards cards d-flex flex-lg-row flex-column gap-lg-0 justify-content-center align-items-center"
+          >
+            <div
+              class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-start align-items-center py-4 px-3"
+              style="position: relative"
+            >
+              <div
+                class="box bg-danger text-white d-flex justify-content-center align-items-center fw-light"
+                style="
+                  border-radius: 3px;
+                  position: absolute;
+                  width: 32px;
+                  height: 34px;
+                  top: -25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                04
+              </div>
+              <i
+                class="fa-solid fa-circle-play text-white m-0 py-4"
+                style="font-size: 50px"
+              ></i>
+              <h6
+                class="text-white fw-light text-center"
+                style="font-size: 12px"
+              >
+                Select your desired content and start streaming instantly
+              </h6>
+            </div>
+            <p class="spase d-none d-lg-flex text-white mx-5">--------></p>
+            <div
+              class="card bg-transparent border-danger col-lg-2 col-8 d-flex flex-column justify-content-start align-items-center py-4 px-3"
+              style="position: relative"
+            >
+              <div
+                class="box bg-danger text-white d-flex justify-content-center align-items-center fw-light"
+                style="
+                  border-radius: 3px;
+                  position: absolute;
+                  width: 32px;
+                  height: 34px;
+                  top: -25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                05
+              </div>
+              <i
+                class="fa-solid fa-martini-glass-citrus text-white m-0 py-4"
+                style="font-size: 50px"
+              ></i>
+              <h6
+                class="text-white fw-light text-center"
+                style="font-size: 12px"
+              >
+                Enjoy unlimited entertainment at your convenience
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section
+      class="faq col-12"
+      style="padding: 100px 0 200px 0; position: relative"
+    >
+      <div
+        class="container col-12 d-flex flex-lg-row flex-column justify-content-between align-items-center"
+      >
+        <div
+          class="left col-lg-4 col-12 text-lg-start text-center mb-lg-0 mb-5"
+        >
+          <h1
+            class="text-white col-12 fw-semibold text-lg-start text-center mb-4"
+          >
+            Frequently <br />
+            <span class="text-danger">Asked</span> Questions
+          </h1>
+          <p
+            class="text-white mb-4 col-lg-9 col-12 fw-normal"
+            style="font-size: 16px"
+          >
+            Questions that get asked the most by our subscribers. Can't find an
+            answer ?
+          </p>
+          <a
+            href="#"
+            class="btn btn-danger"
+            style="font-size: 10px; padding: 10px 25px; border-radius: 3px"
+            >Ask a Question</a
+          >
+        </div>
+        <div class="accordion col-lg-7 col-12" id="accordionExample">
+          <!-- ITEM 1 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item1"
+                aria-expanded="true"
+              >
+                How much does MovieMax cost ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                MovieMax offers different subscription plans to match your
+                needs.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item2"
+              >
+                Can I cancel anytime ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                Yes, you can cancel your subscription at any time without extra
+                fees.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item3"
+              >
+                Do you offer 4K movies ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                Yes, thousands of titles are available in 4K resolution.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item4"
+              >
+                How many devices can I use ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                You can watch on up to 4 devices at the same time.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item5"
+              >
+                Does MovieMax work offline ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                Yes, you can download movies and watch offline anytime.
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div
+            class="accordion-item mb-2 border-danger rounded-2 bg-transparent py-3 px-4"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-transparent text-white fs-6"
+                style="box-shadow: none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#item6"
+              >
+                Do you offer family plans ?
+                <span class="custom-icon"></span>
+              </button>
+            </h2>
+            <div
+              id="item6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-6 text-secondary col-11">
+                Of course! We offer multiple family-friendly plans.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="back1 container col-12 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="back col-lg-10 col-12 d-flex justify-content-center align-items-center rounded-2"
+        >
+          <div
+            class="overlay col-12 h-100 rounded-2 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h3 class="text-white col-10 mb-4">
+              Ready to <span class="text-danger">dive into the world</span>of
+              blockbuster entertainment wherever you go ?
+            </h3>
+            <a href="#" class="btn btn-danger text-white">Stream Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="col-12">
+      <div
+        class="container col-12 d-flex flex-lg-row flex-column justify-content-between align-items-start border-1 border-bottom border-secondary pb-4 mb-2"
+      >
+        <div class="col-lg-2 col-12 mb-lg-0 mb-5">
+          <h1 class="text-white fs-2 mb-4">
+            MOVIE<span class="text-danger">MAX</span>
+          </h1>
+          <div class="col-12">
+            <h6 class="text-white mb-1">Email</h6>
+            <p class="text-secondary">support@moviemax.com</p>
+          </div>
+          <div class="col-12">
+            <h6 class="text-white mb-1">Phone</h6>
+            <p class="text-secondary">(+20)11 2223 3334</p>
+          </div>
+          <div class="col-12">
+            <h6 class="text-white mb-1">Our location</h6>
+            <p class="text-secondary">120 Elnasr St, Nasr city,<br />Cairo</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-12 mb-lg-0 mb-5">
+          <h5 class="text-white mb-4">Quick Links</h5>
+          <p class="text-secondary">Pricing Plans</p>
+          <p class="text-secondary">Pormotion</p>
+          <p class="text-secondary">How it Works</p>
+          <p class="text-secondary">Blog</p>
+          <p class="text-secondary">FAQ</p>
+        </div>
+        <div class="col-lg-2 col-12 mb-lg-0 mb-5">
+          <h5 class="text-white mb-4">Quick Links</h5>
+          <p class="text-secondary">Pricing Plans</p>
+          <p class="text-secondary">Pormotion</p>
+          <p class="text-secondary">How it Works</p>
+          <p class="text-secondary">Blog</p>
+          <p class="text-secondary">FAQ</p>
+        </div>
+        <div class="col-lg-2 col-12 mb-lg-0 mb-5">
+          <h5 class="text-white mb-4">Quick Links</h5>
+          <p class="text-secondary">Pricing Plans</p>
+          <p class="text-secondary">Pormotion</p>
+          <p class="text-secondary">How it Works</p>
+          <p class="text-secondary">Blog</p>
+          <p class="text-secondary">FAQ</p>
+        </div>
+        <div
+          class="col-lg-2 col-12 mb-lg-0 mb-5 d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center"
+        >
+          <h2 class="text-white mb-4 fw-bolder" style="font-size: 19px">
+            Newsletter <span class="text-danger">Sign Up</span>
+          </h2>
+          <p
+            class="text-secondary text-lg-start text-center col-lg-12 col-8"
+            style="font-size: 8px"
+          >
+            Stay up to date with the latest movie releases, exclusive
+            promotions, and special offers by subscribing to our newsletter.
+          </p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="bg-transparent border border-1 border-secondary col-12 ps-3 py-2 mb-4"
+            placeholder="Enter Your Email Here"
+          />
+          <a href="#" class="btn btn-danger px-3 py-2" style="font-size: 12px"
+            >Subscribe</a
+          >
+        </div>
+      </div>
+      <div
+        class="container col-12 d-flex flex-lg-row flex-column gap-lg-0 gap-2 justify-content-between align-items-center mb-3"
+      >
+        <p class="text-secondary mb-0" style="font-size: 12px">
+          Copyright © 2024 MovieMax. All rights reserved.
+        </p>
+        <div class="d-flex">
+          <a
+            href="#"
+            class="text-secondary text-decoration-none pe-2"
+            style="font-size: 12px"
+            >Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-secondary text-decoration-none border-start border-end border-secondary px-2"
+            style="font-size: 12px"
+            >Terms & Conditions</a
+          >
+          <a
+            href="#"
+            class="text-secondary text-decoration-none ps-2"
+            style="font-size: 12px"
+            >Cookie Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
