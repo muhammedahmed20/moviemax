@@ -17,11 +17,13 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 9999;
 
   h1 {
     font-family: "Audiowide", sans-serif !important;
     font-weight: 400;
     -webkit-text-stroke: 1px #ffffff;
+
     span {
       font-family: "Audiowide", sans-serif !important;
       -webkit-text-stroke: 0;
@@ -30,24 +32,28 @@ header {
 
   nav {
     font-family: "Poppins", sans-serif;
+
     a {
       font-weight: 200;
       padding-bottom: 2px !important;
-      transition: all .5s ease ;
-      &:hover{
+      transition: all .5s ease;
+
+      &:hover {
         color: #dc3545 !important;
       }
     }
   }
+
   p {
     font-family: "Poppins", sans-serif;
   }
+
   .offcanvas {
     width: 60% !important;
     background-color: #172639;
   }
 
-  .active{
+  .active {
     color: #dc3545 !important;
     border-bottom: 1px solid #dc3545 !important;
   }
@@ -56,10 +62,11 @@ header {
 .hero {
   margin-bottom: 80px;
   padding-top: 120px;
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(23, 38, 57, 0.897),
-      /* شفاف فوق */ #172639 /* اللون اللي انت عايزه تحت */
+      /* شفاف فوق */
+      #172639
+      /* اللون اللي انت عايزه تحت */
     ),
     url("../assets/71cuz-9AUsL._AC_SX679_.jpg");
 
@@ -80,6 +87,7 @@ header {
 
 .about {
   margin-bottom: 80px;
+
   .right {
     height: 300px;
     background-image: url("../assets/RZG39ASN.jpg");
@@ -89,12 +97,14 @@ header {
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.452);
+
       p {
         font-family: "Poppins", sans-serif;
         font-size: 12px;
       }
     }
   }
+
   .left {
     font-family: "Poppins", sans-serif;
   }
@@ -111,10 +121,12 @@ header {
 
   .cards {
     margin-bottom: 60px;
+
     @media screen and (max-width: 991px) {
       margin-bottom: 0;
     }
   }
+
   .card {
     @media screen and (max-width: 991px) {
       margin-bottom: 20px;
@@ -139,6 +151,7 @@ header {
     background-image: url("../assets/GCN7YTY3.jpg");
     background-size: 140%;
     background-position: 0% 30%;
+
     @media screen and (max-width: 767px) {
       background-size: cover;
       background-position: center;
@@ -160,6 +173,7 @@ header {
       border-bottom: 1px solid #dc3545 !important;
     }
   }
+
   .feat2 {
     @media screen and (max-width: 991px) {
       border-right: 1px solid #dc3545 !important;
@@ -231,11 +245,9 @@ header {
     height: 261px;
     padding: 15px;
     border-radius: 10px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.295)
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.295));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -245,6 +257,7 @@ header {
     h5 {
       font-size: 12px !important;
     }
+
     p {
       color: rgb(180, 174, 174) !important;
     }
@@ -335,11 +348,13 @@ header {
     transition: 0.3s ease;
     border-top: 1px solid #dc3545 !important;
   }
+
   .back1 {
     position: absolute;
     bottom: -150px;
     left: 50%;
     transform: translateX(-50%);
+
     .back {
       height: 300px;
       background-image: url("../assets/KJLK5ASP.jpg");
@@ -354,6 +369,7 @@ header {
         h3 {
           font-size: 1.2rem;
         }
+
         a {
           font-size: 0.8rem;
         }
@@ -364,6 +380,7 @@ header {
 
 footer {
   font-family: "Poppins", sans-serif;
+
   h1 {
     font-family: "Audiowide", sans-serif !important;
     font-weight: 400;
@@ -373,6 +390,7 @@ footer {
     outline: none;
     border-radius: 3px;
   }
+
   ::placeholder {
     font-size: 8px;
   }
@@ -400,7 +418,7 @@ footer {
 }
 
 .popular {
-  height: 400px;
+  min-height: 400px;
 
   #moviesCarousel .carousel-item {
     padding: 15px 0;
@@ -413,7 +431,8 @@ footer {
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s ease;
-    flex-shrink: 0; /* مهم داخل d-flex */
+    flex-shrink: 0;
+    /* مهم داخل d-flex */
   }
 
   #moviesCarousel .card img {
@@ -450,11 +469,9 @@ footer {
     height: 261px;
     padding: 15px;
     border-radius: 10px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.445),
-      rgba(0, 0, 0, 0.116)
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.445),
+        rgba(0, 0, 0, 0.116));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -494,23 +511,26 @@ footer {
   }
 
   #moviesCarousel .carousel-control-prev {
-    left: -100px !important; /* تحريك الزر اليسار */
+    left: -100px !important;
+
+    /* تحريك الزر اليسار */
     @media screen and (max-width: 767px) {
-    display: none !important;
-  }
+      display: none !important;
+    }
   }
 
   #moviesCarousel .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
   }
-}
 }
 
 
 .latest {
-  height: 400px;
+  min-height: 400px;
 
   #moviesCarousel1 .carousel-item {
     padding: 15px 0;
@@ -523,7 +543,8 @@ footer {
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s ease;
-    flex-shrink: 0; /* مهم داخل d-flex */
+    flex-shrink: 0;
+    /* مهم داخل d-flex */
   }
 
   #moviesCarousel1 .card img {
@@ -560,11 +581,9 @@ footer {
     height: 261px;
     padding: 15px;
     border-radius: 10px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.445),
-      rgba(0, 0, 0, 0.116)
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.445),
+        rgba(0, 0, 0, 0.116));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -604,23 +623,26 @@ footer {
   }
 
   #moviesCarousel1 .carousel-control-prev {
-    left: -100px !important; /* تحريك الزر اليسار */
+    left: -100px !important;
+
+    /* تحريك الزر اليسار */
     @media screen and (max-width: 767px) {
-    display: none !important;
-  }
+      display: none !important;
+    }
   }
 
- #moviesCarousel1 .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+  #moviesCarousel1 .carousel-control-next {
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
   }
-}
 }
 
 
 .horror {
-  height: 400px;
+  min-height: 400px;
 
   #moviesCarousel2 .carousel-item {
     padding: 15px 0;
@@ -633,7 +655,8 @@ footer {
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s ease;
-    flex-shrink: 0; /* مهم داخل d-flex */
+    flex-shrink: 0;
+    /* مهم داخل d-flex */
   }
 
   #moviesCarousel2 .card img {
@@ -670,11 +693,9 @@ footer {
     height: 261px;
     padding: 15px;
     border-radius: 10px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.445),
-      rgba(0, 0, 0, 0.116)
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.445),
+        rgba(0, 0, 0, 0.116));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -714,391 +735,402 @@ footer {
   }
 
   #moviesCarousel2 .carousel-control-prev {
-    left: -100px !important; /* تحريك الزر اليسار */
+    left: -100px !important;
+
+    /* تحريك الزر اليسار */
     @media screen and (max-width: 767px) {
-    display: none !important;
-  }
+      display: none !important;
+    }
   }
 
   #moviesCarousel2 .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
   }
-}
 }
 
 
 .romantic {
-  height: 400px;
+  min-height: 400px;
 
   #romanticCarousel .carousel-item {
-  padding: 15px 0 !important;
-}
-
-#romanticCarousel .carousel-item .card {
-  position: relative;
-  width: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex-shrink: 0 !important;
-}
-
-#romanticCarousel .card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s ease;
-}
-
-/* المعلومات تحت الصورة */
-#romanticCarousel .card .info {
-  padding: 8px 0;
-  transition: 0.2s ease;
-}
-
-/* هافر: يخفي النص ويكبر الكارت */
-#romanticCarousel .card:hover .info {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-#romanticCarousel .card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-/* Overlay */
-#romanticCarousel .card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 261px;
-  padding: 15px;
-  border-radius: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.445), rgba(0,0,0,0.116));
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-#romanticCarousel .card:hover .overlay {
-  opacity: 1;
-}
-
-/* Overlay text */
-#romanticCarousel .overlay h5 {
-  font-size: 14px !important;
-  margin: 0;
-}
-
-#romanticCarousel .overlay p {
-  font-size: 12px !important;
-  color: #b4aeae !important;
-}
-
-/* Overlay icons */
-#romanticCarousel .overlay .icon {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(105, 105, 105, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-
-#romanticCarousel .overlay .icon:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* الكنترولر */
-#romanticCarousel .carousel-control-prev {
-  left: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+    padding: 15px 0 !important;
   }
-}
 
-#romanticCarousel .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+  #romanticCarousel .carousel-item .card {
+    position: relative;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+    flex-shrink: 0 !important;
   }
-}
+
+  #romanticCarousel .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+
+  /* المعلومات تحت الصورة */
+  #romanticCarousel .card .info {
+    padding: 8px 0;
+    transition: 0.2s ease;
+  }
+
+  /* هافر: يخفي النص ويكبر الكارت */
+  #romanticCarousel .card:hover .info {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  #romanticCarousel .card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  /* Overlay */
+  #romanticCarousel .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.116));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  #romanticCarousel .card:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Overlay text */
+  #romanticCarousel .overlay h5 {
+    font-size: 14px !important;
+    margin: 0;
+  }
+
+  #romanticCarousel .overlay p {
+    font-size: 12px !important;
+    color: #b4aeae !important;
+  }
+
+  /* Overlay icons */
+  #romanticCarousel .overlay .icon {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105, 105, 105, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+
+  #romanticCarousel .overlay .icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* الكنترولر */
+  #romanticCarousel .carousel-control-prev {
+    left: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  #romanticCarousel .carousel-control-next {
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
 }
 
 .recommended {
-  height: 400px;
+  min-height: 400px;
 
 
   #recommendedCarousel .carousel-item {
-  padding: 15px 0 !important;
-}
-
-#recommendedCarousel .carousel-item .card {
-  position: relative;
-  width: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex-shrink: 0 !important;
-}
-
-#recommendedCarousel .card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s ease;
-}
-
-/* المعلومات تحت الصورة */
-#recommendedCarousel .card .info {
-  padding: 8px 0;
-  transition: 0.2s ease;
-}
-
-/* هافر: يخفي النص ويكبر الكارت */
-#recommendedCarousel .card:hover .info {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-#recommendedCarousel .card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-/* Overlay */
-#recommendedCarousel .card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 261px;
-  padding: 15px;
-  border-radius: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.445), rgba(0,0,0,0.116));
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-#recommendedCarousel .card:hover .overlay {
-  opacity: 1;
-}
-
-/* Overlay text */
-#recommendedCarousel .overlay h5 {
-  font-size: 14px !important;
-  margin: 0;
-}
-
-#recommendedCarousel .overlay p {
-  font-size: 12px !important;
-  color: #b4aeae !important;
-}
-
-/* Overlay icons */
-#recommendedCarousel .overlay .icon {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(105, 105, 105, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-
-#recommendedCarousel .overlay .icon:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* الكنترولر */
-#recommendedCarousel .carousel-control-prev {
-  left: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+    padding: 15px 0 !important;
   }
-}
 
-#recommendedCarousel .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+  #recommendedCarousel .carousel-item .card {
+    position: relative;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+    flex-shrink: 0 !important;
   }
-}
+
+  #recommendedCarousel .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+
+  /* المعلومات تحت الصورة */
+  #recommendedCarousel .card .info {
+    padding: 8px 0;
+    transition: 0.2s ease;
+  }
+
+  /* هافر: يخفي النص ويكبر الكارت */
+  #recommendedCarousel .card:hover .info {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  #recommendedCarousel .card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  /* Overlay */
+  #recommendedCarousel .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.116));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  #recommendedCarousel .card:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Overlay text */
+  #recommendedCarousel .overlay h5 {
+    font-size: 14px !important;
+    margin: 0;
+  }
+
+  #recommendedCarousel .overlay p {
+    font-size: 12px !important;
+    color: #b4aeae !important;
+  }
+
+  /* Overlay icons */
+  #recommendedCarousel .overlay .icon {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105, 105, 105, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+
+  #recommendedCarousel .overlay .icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* الكنترولر */
+  #recommendedCarousel .carousel-control-prev {
+    left: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  #recommendedCarousel .carousel-control-next {
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
 }
 
 .k-dramas {
-  height: 400px;
+  min-height: 400px;
 
   #k-dramasCarousel .carousel-item {
-  padding: 15px 0 !important;
-}
+    padding: 15px 0 !important;
+  }
 
-#k-dramasCarousel .carousel-item .card {
-  position: relative;
-  width: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex-shrink: 0 !important;
-}
+  #k-dramasCarousel .carousel-item .card {
+    position: relative;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+    flex-shrink: 0 !important;
+  }
 
-#k-dramasCarousel .card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s ease;
-}
+  #k-dramasCarousel .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
 
-/* المعلومات تحت الصورة */
-#k-dramasCarousel .card .info {
-  padding: 8px 0;
-  transition: 0.2s ease;
-}
+  /* المعلومات تحت الصورة */
+  #k-dramasCarousel .card .info {
+    padding: 8px 0;
+    transition: 0.2s ease;
+  }
 
-/* هافر: يخفي النص ويكبر الكارت */
-#k-dramasCarousel .card:hover .info {
-  opacity: 0;
-  transform: translateY(10px);
-}
+  /* هافر: يخفي النص ويكبر الكارت */
+  #k-dramasCarousel .card:hover .info {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-#k-dramasCarousel .card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
+  #k-dramasCarousel .card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
 
-/* Overlay */
-#k-dramasCarousel .card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 261px;
-  padding: 15px;
-  border-radius: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.445), rgba(0,0,0,0.116));
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: 0.3s ease;
-}
+  /* Overlay */
+  #k-dramasCarousel .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.116));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
 
-#k-dramasCarousel .card:hover .overlay {
-  opacity: 1;
-}
+  #k-dramasCarousel .card:hover .overlay {
+    opacity: 1;
+  }
 
-/* Overlay text */
-#k-dramasCarousel .overlay h5 {
-  font-size: 14px !important;
-  margin: 0;
-}
+  /* Overlay text */
+  #k-dramasCarousel .overlay h5 {
+    font-size: 14px !important;
+    margin: 0;
+  }
 
-#k-dramasCarousel .overlay p {
-  font-size: 12px !important;
-  color: #b4aeae !important;
-}
+  #k-dramasCarousel .overlay p {
+    font-size: 12px !important;
+    color: #b4aeae !important;
+  }
 
-/* Overlay icons */
-#k-dramasCarousel .overlay .icon {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(105, 105, 105, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: 0.2s;
-}
+  /* Overlay icons */
+  #k-dramasCarousel .overlay .icon {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105, 105, 105, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
 
-#k-dramasCarousel .overlay .icon:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
+  #k-dramasCarousel .overlay .icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 
-/* الكنترولر */
-#k-dramasCarousel .carousel-control-prev {
-  left: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+  /* الكنترولر */
+  #k-dramasCarousel .carousel-control-prev {
+    left: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  #k-dramasCarousel .carousel-control-next {
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
   }
 }
 
-#k-dramasCarousel .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
-  }
-}
-}
 
-
-.favorite{
+.favorite {
   margin-bottom: 80px;
 
-  .left{
+  .left {
     position: relative;
     width: calc(50% - .5rem);
     height: 550px;
-    background-image: url('../assets/squad.webp') ;
+    background-image: url('../assets/squad.webp');
     background-position: center;
     background-size: cover;
   }
-  .right{
+
+  .right {
     position: relative;
     width: calc(50% - .5rem);
     height: 550px;
-    background-image: url('../assets/hood.jpg') ;
+    background-image: url('../assets/hood.jpg');
     background-position: center;
     background-size: cover;
   }
 
   @media screen and (max-width: 991px) {
+
     .right,
-    .left{
+    .left {
       width: 100%;
     }
   }
 
 
-  .overlay{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000000bb;
-      border-radius: 5px;
-    }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bb;
+    border-radius: 5px;
+  }
 
-    .fa-heart{
-      position: absolute;
-      top: 35px;
-      right: 35px;
-      font-size: 30px;
-    }
+  .fa-heart {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 30px;
+  }
 }
 
-.continue{
+.continue {
   margin-bottom: 80px;
 
-  .card{
+  .card {
     width: calc(25% - 10px);
     height: 250px;
 
@@ -1107,120 +1139,323 @@ footer {
       height: 250px;
     }
 
-    .img-box{
+    .img-box {
       background-image: url('../assets/jumanji.jpg');
       background-size: cover;
       background-position: center;
     }
 
-    .overlay{
+    .overlay {
       background-color: #0000009a;
     }
   }
 }
 
 .again {
+  min-height: 400px;
   margin-bottom: 100px;
 
   #againCarousel .carousel-item {
-  padding: 15px 0 !important;
+    padding: 15px 0 !important;
+  }
+
+  #againCarousel .carousel-item .card {
+    position: relative;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+    flex-shrink: 0 !important;
+  }
+
+  #againCarousel .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+
+  /* المعلومات تحت الصورة */
+  #againCarousel .card .info {
+    padding: 8px 0;
+    transition: 0.2s ease;
+  }
+
+  /* هافر: يخفي النص ويكبر الكارت */
+  #againCarousel .card:hover .info {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  #againCarousel .card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  /* Overlay */
+  #againCarousel .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.116));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  #againCarousel .card:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Overlay text */
+  #againCarousel .overlay h5 {
+    font-size: 14px !important;
+    margin: 0;
+  }
+
+  #againCarousel .overlay p {
+    font-size: 12px !important;
+    color: #b4aeae !important;
+  }
+
+  /* Overlay icons */
+  #againCarousel .overlay .icon {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105, 105, 105, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+
+  #againCarousel .overlay .icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* الكنترولر */
+  #againCarousel .carousel-control-prev {
+    left: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  #againCarousel .carousel-control-next {
+    right: -100px !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
 }
 
-#againCarousel .carousel-item .card {
-  position: relative;
-  width: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex-shrink: 0 !important;
+.cast {
+
+  .card {
+    width: calc(15% - 5px);
+
+    @media screen and (max-width: 991px) {
+      width: calc(50% - 10px);
+    }
+  }
+
+  .img-box img {
+    height: 180px;
+    /* قلل الرقم اللي يناسبك */
+    object-fit: cover;
+    /* قص الصورة من الأطراف */
+    width: 100%;
+    border-radius: 8px;
+  }
 }
 
-#againCarousel .card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s ease;
+.review {
+  .card {
+    min-height: 280px;
+    width: calc(50% - 5px);
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
 }
 
-/* المعلومات تحت الصورة */
-#againCarousel .card .info {
-  padding: 8px 0;
-  transition: 0.2s ease;
-}
+.related {
+  margin-bottom: 80px;
+  font-family: "Poppins", sans-serif;
 
-/* هافر: يخفي النص ويكبر الكارت */
-#againCarousel .card:hover .info {
-  opacity: 0;
-  transform: translateY(10px);
-}
+  /* .card {
+    width: 200px !important;
+    img {
+      width: 100%;
+      height: 260px; 
+      object-fit: cover; 
+    }
+  } */
 
-#againCarousel .card:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
+  .cards {
+    display: flex;
+  }
 
-/* Overlay */
-#againCarousel .card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 261px;
-  padding: 15px;
-  border-radius: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.445), rgba(0,0,0,0.116));
+  /* الكارت */
+  .cards .card {
+    position: relative;
+    width: calc(20% - 10px);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  /* الصورة */
+  .cards .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+
+  /* معلومات تحت الصورة (الوضع الطبيعي) */
+  .card .info {
+    padding: 10px 0;
+    transition: 0.2s ease;
+  }
+
+  /* لما أعمل هافر… أخفي الكلام اللي تحت */
+  .card:hover .info {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  /* تكبير الكارت وقت الهافر */
+  .card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+  }
+
+  /* الـ Overlay اللي فوق الصورة */
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 261px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.295));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.3s ease;
+
+    h5 {
+      font-size: 12px !important;
+    }
+
+    p {
+      color: rgb(180, 174, 174) !important;
+    }
+  }
+
+  /* يظهر وقت الهافر */
+  .card:hover .overlay {
+    opacity: 1;
+  }
+
+  /* الأيقونات */
+  /* .overlay .icons {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: 0.3s ease;
+  gap: 12px;
+  margin-top: 10px;
 }
 
-#againCarousel .card:hover .overlay {
-  opacity: 1;
-}
-
-/* Overlay text */
-#againCarousel .overlay h5 {
-  font-size: 14px !important;
-  margin: 0;
-}
-
-#againCarousel .overlay p {
-  font-size: 12px !important;
-  color: #b4aeae !important;
-}
-
-/* Overlay icons */
-#againCarousel .overlay .icon {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(105, 105, 105, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overlay .icons i {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  background: rgba(255,255,255,0.2);
   border-radius: 50%;
-  transition: 0.2s;
-}
+  backdrop-filter: blur(4px);
+  transition: .2s;
+} */
 
-#againCarousel .overlay .icon:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* الكنترولر */
-#againCarousel .carousel-control-prev {
-  left: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+  .overlay .icon:hover {
+    background: rgba(255, 255, 255, 0.4) !important;
   }
 }
 
-#againCarousel .carousel-control-next {
-  right: -100px !important;
-  @media screen and (max-width: 767px) {
-    display: none !important;
+.play {
+  height: 100vh;
+
+  @media screen and (max-width: 991px) {
+    height: 50vh;
+  }
+
+}
+
+.rate {
+  .inp {
+    outline: none;
+
+  }
+
+  ::placeholder {
+    font-size: 10px;
   }
 }
+
+.contact {
+
+  .lol {
+    width: calc(50% - 5px);
+  }
+}
+
+.ts {
+  width: calc(80% - 5px);
+}
+
+.tst {
+  width: calc(20% - 5px);
+}
+
+.plan {
+
+  .card {
+    width: 30%;
+    min-height: 450px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      width: 80%;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+
+  .badge {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    right: -40px;
+    transform: rotate(45deg);
+  }
+
 }
